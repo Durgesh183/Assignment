@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct person{
+    int id;
+    char fname[20];
+    char lname[20];
+};
+void main()
+{
+    FILE *fptr;
+    fptr=fopen("Name.txt","wb");
+    struct person input1={18,"Virat","Kohli"};
+    fprintf(fptr,"Durgesh Tewary\n");
+    fprintf(fptr,"My Name is Durgesh Tewary and I study in Delhi University and currently pursuing B.Tech.");
+
+    fclose(fptr);
+    
+}
